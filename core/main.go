@@ -8,9 +8,7 @@ import (
 func main() {
 
 	port := "8081"
-
 	r := server.Setup()
-
 	log.Println("listen on: ", port)
 
 	err := r.Run(":" +port) //(viper.GetString("bindAddr") + ":" + viper.GetString("bindPort"))
