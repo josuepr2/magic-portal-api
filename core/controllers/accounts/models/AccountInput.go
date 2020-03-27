@@ -19,3 +19,9 @@ type AccountUpdateInput struct {
 	Nickname  *string
 	Email     string
 }
+type AccountPasswordInput struct {
+	ID          uuid.UUID
+	Email       string
+	Password    string
+	OldPassword string
+}
